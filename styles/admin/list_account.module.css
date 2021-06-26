@@ -1,0 +1,22 @@
+.list_1 {
+  display: grid;
+  grid-template-columns: 200px 95px;
+  grid-template-rows: auto ;
+  column-gap: 10px;
+  row-gap: 15px;
+  background-color: plum;
+}
+
+.list_2 {
+  display: flex;
+  align-items: baseline;
+}
+
+
+.list_content {
+  margin-right: 10px;
+}
+
+.list_button{
+  text-align: center;
+}

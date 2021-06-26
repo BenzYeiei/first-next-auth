@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'Prompt';
+  src: url(../../public/font_family/Prompt-Light.ttf);
+}
+
+.body { 
+  font-family: 'Prompt';
+  font-size: 18px;
+}
+
+.a {
+  font-size: 50px;
+}
