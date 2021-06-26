@@ -82,7 +82,7 @@ function Forgot_form({ display, close }: Props) {
   const onClick_data = async () => {
     try {
       // **** fetch to backend for signIn
-      const response = await fetch("http://127.0.0.1:5000/api/account/forgot-pass", {
+      const response = await fetch("https://benzyeiei-demo.herokuapp.com/api/account/forgot-pass", {
         method: "POST",
         body: JSON.stringify({
           email: email,

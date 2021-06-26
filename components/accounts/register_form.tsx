@@ -135,7 +135,7 @@ function Register_form({ open_register_form, handleClose__register_form }: Props
 
   const handleSendData = async() => {
     try {
-      const response_register = await fetch("http://127.0.0.1:5000/api/account/register", {
+      const response_register = await fetch("https://benzyeiei-demo.herokuapp.com/api/account/register", {
         method: "POST",
         headers: {"Content-Type": "application/json"},
         body: JSON.stringify({ 
@@ -175,7 +175,7 @@ function Register_form({ open_register_form, handleClose__register_form }: Props
         }
       }
 
-      const response_login = await fetch("http://127.0.0.1:5000/api/account/login", {
+      const response_login = await fetch("https://benzyeiei-demo.herokuapp.com/api/account/login", {
         method: "POST",
         body: JSON.stringify({
           emailORusername: data_register.email,
@@ -198,7 +198,7 @@ function Register_form({ open_register_form, handleClose__register_form }: Props
       const data_login = await response_login.json();
 
       // **** fetch for set cookie
-      await fetch("http://localhost:3000/api/register/login", {
+      await fetch("https://benzyeiei.herokuapp.com/api/register/login", {
         method: "POST",
         body: JSON.stringify({
           email: data_login.email,

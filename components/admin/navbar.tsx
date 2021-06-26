@@ -92,7 +92,7 @@ export default function Admin_navbar({ open_drawer, handleDrawerOpen, handleDraw
   }, [open_drawer]);
 
   const Logout = async() => {
-    await fetch("http://localhost:3000/api/register/logout");
+    await fetch("https://benzyeiei.herokuapp.com/api/register/logout");
     return router.push(`/`);
   };
 

@@ -49,7 +49,7 @@ function Admin_index({ account }) {
 
   const fetcher_2 = () => {
     const fetch_data = async() => {
-      const response = await fetch("http://127.0.0.1:5000/api/account/signin-cookie",
+      const response = await fetch("https://benzyeiei-demo.herokuapp.com/api/account/signin-cookie",
         {
           method: "POST",
           headers: { "Content-Type": "applecation/json" },

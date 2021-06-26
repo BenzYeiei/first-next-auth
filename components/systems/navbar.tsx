@@ -43,7 +43,7 @@ export default function Navbar({ handleOpen_login_form, handleOpen__register_for
   const router = useRouter();
 
   const Logout = async() => {
-    await fetch("http://localhost:3000/api/register/logout");
+    await fetch("https://benzyeiei.herokuapp.com/api/register/logout");
     return router.reload();
   };
 

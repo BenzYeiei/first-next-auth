@@ -20,7 +20,7 @@ const Csr = () => {
 
   useEffect(() => {
     const fetchData = async() => {
-      const get_response = await fetch("http://127.0.0.1:5000/api/account/listusername",{
+      const get_response = await fetch("https://benzyeiei-demo.herokuapp.com/api/account/listusername",{
         method: 'GET',
       });
       const get_data = await get_response.json();

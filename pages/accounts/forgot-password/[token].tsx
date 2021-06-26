@@ -34,7 +34,7 @@ export default function Forgot_password()  {
   useEffect(() => {
     const executed = async(body) => {
       console.log(body)
-      const response = await fetch("http://127.0.0.1:5000/api/account/verify-token", { 
+      const response = await fetch("https://benzyeiei-demo.herokuapp.com/api/account/verify-token", { 
         method: 'POST',
         body: JSON.stringify(body),
         headers: { 'Content-Type': 'application/json' },
@@ -82,7 +82,7 @@ export default function Forgot_password()  {
 
   // **** send password for reset password
   const send_data = async() => {
-    const response = await fetch("http://127.0.0.1:5000/api/account/rest-password", { 
+    const response = await fetch("https://benzyeiei-demo.herokuapp.com/api/account/rest-password", { 
       method: 'POST',
       body: JSON.stringify({ password: passwordData, token: param }),
       headers: { 'Content-Type': 'application/json' },

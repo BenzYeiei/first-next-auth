@@ -22,7 +22,7 @@ export const getServerSideProps: GetServerSideProps = async ({ req, res }: { req
     };
   }
 
-  const response = await fetch('http://127.0.0.1:5000/api/account/listusername', {
+  const response = await fetch('https://benzyeiei-demo.herokuapp.com/api/account/listusername', {
     method: "GET",
     headers: { "Content-Type" : "application/json" }
   });
@@ -51,7 +51,7 @@ function List_account({ account, list_account }) {
 
   const Destroy_Account = async(username) => {
     const response = await fetch(
-      "http://127.0.0.1:5000/api/admin/destroy-account", 
+      "https://benzyeiei-demo.herokuapp.com/api/admin/destroy-account", 
       {
         method: "POST",
         headers: { 
@@ -67,7 +67,7 @@ function List_account({ account, list_account }) {
     };
 
 
-    const get_List_Account = await fetch('http://127.0.0.1:5000/api/account/listusername', {
+    const get_List_Account = await fetch('https://benzyeiei-demo.herokuapp.com/api/account/listusername', {
       method: "GET",
       headers: { "Content-Type" : "application/json" }
     })

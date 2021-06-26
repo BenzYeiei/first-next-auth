@@ -98,7 +98,7 @@ function Login_form({ display, close, handleOpen_forgot_form }: Props) {
   const onClick_data = async () => {
     try {
       // **** fetch to backend for signIn
-      const response = await fetch("http://127.0.0.1:5000/api/account/login", {
+      const response = await fetch("https://benzyeiei-demo.herokuapp.com/api/account/login", {
         method: "POST",
         body: JSON.stringify({
           emailORusername: username,
@@ -123,7 +123,7 @@ function Login_form({ display, close, handleOpen_forgot_form }: Props) {
       // console.log(data);
 
       // **** fetch for set cookie
-      await fetch("http://localhost:3000/api/register/login", {
+      await fetch("https://benzyeiei.herokuapp.com/api/register/login", {
         method: "POST",
         body: JSON.stringify({
           email: data.email,
